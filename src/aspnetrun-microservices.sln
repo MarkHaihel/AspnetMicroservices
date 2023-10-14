@@ -17,19 +17,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basket.API", "Services\Bask
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{BEF6744F-F169-4D4A-92D5-0E77E9162FC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discount.API", "Services\Discount\Discount.API\Discount.API.csproj", "{2E081FC5-F582-42F8-8640-78D59DF62969}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discount.API", "Services\Discount\Discount.API\Discount.API.csproj", "{2E081FC5-F582-42F8-8640-78D59DF62969}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discount.Grpc", "Services\Discount\Discount.Grpc\Discount.Grpc.csproj", "{9AAD19F5-443C-4AB0-A93E-A121DF48167E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discount.Grpc", "Services\Discount\Discount.Grpc\Discount.Grpc.csproj", "{9AAD19F5-443C-4AB0-A93E-A121DF48167E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{654D2ED4-1EFA-4CE1-8974-8025CB3B6156}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.API", "Services\Ordering\Ordering.API\Ordering.API.csproj", "{62015917-7A57-467E-AC0E-93939386D636}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.API", "Services\Ordering\Ordering.API\Ordering.API.csproj", "{62015917-7A57-467E-AC0E-93939386D636}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Domain", "Services\Ordering\Ordering.Domain\Ordering.Domain.csproj", "{9987DD65-800A-4F1E-832D-9A59385F8162}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Domain", "Services\Ordering\Ordering.Domain\Ordering.Domain.csproj", "{9987DD65-800A-4F1E-832D-9A59385F8162}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Application", "Services\Ordering\Ordering.Application\Ordering.Application.csproj", "{9A80BCAA-8C8D-4900-A065-CC2AEADE7A84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Application", "Services\Ordering\Ordering.Application\Ordering.Application.csproj", "{9A80BCAA-8C8D-4900-A065-CC2AEADE7A84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Infrastructure", "Services\Ordering\Ordering.Infrastructure\Ordering.Infrastructure.csproj", "{223C335B-6E27-415D-9548-F998D9927495}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Infrastructure", "Services\Ordering\Ordering.Infrastructure\Ordering.Infrastructure.csproj", "{223C335B-6E27-415D-9548-F998D9927495}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{E4D0C140-843E-4760-B454-D03BBF8832ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Messages", "BuildingBlocks\EventBus.Messages\EventBus.Messages.csproj", "{10426A17-7054-475E-A4B0-DF7F22F08EA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +77,10 @@ Global
 		{223C335B-6E27-415D-9548-F998D9927495}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{223C335B-6E27-415D-9548-F998D9927495}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{223C335B-6E27-415D-9548-F998D9927495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10426A17-7054-475E-A4B0-DF7F22F08EA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10426A17-7054-475E-A4B0-DF7F22F08EA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10426A17-7054-475E-A4B0-DF7F22F08EA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10426A17-7054-475E-A4B0-DF7F22F08EA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +98,7 @@ Global
 		{9987DD65-800A-4F1E-832D-9A59385F8162} = {654D2ED4-1EFA-4CE1-8974-8025CB3B6156}
 		{9A80BCAA-8C8D-4900-A065-CC2AEADE7A84} = {654D2ED4-1EFA-4CE1-8974-8025CB3B6156}
 		{223C335B-6E27-415D-9548-F998D9927495} = {654D2ED4-1EFA-4CE1-8974-8025CB3B6156}
+		{10426A17-7054-475E-A4B0-DF7F22F08EA0} = {E4D0C140-843E-4760-B454-D03BBF8832ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {877E7744-6FF0-444D-9751-DDF3D9C34711}
